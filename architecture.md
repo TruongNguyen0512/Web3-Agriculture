@@ -1,3 +1,21 @@
+# System Architecture
+
+The system architecture is designed with multiple layers to ensure scalability, security, and efficient data management.
+
+![Architecture Diagram](./docs/images/architecture.png)
+
+## Key Components
+
+1. User Layer
+   - Farmers: Update information and manage products
+   - Consumers: Track products and provide feedback
+   - Admins: System management and approval
+
+2. Frontend Layer
+   - Web Application (React + TailwindCSS)
+   - Mobile Application (React Native)
+   - Core Components including Web3 integration
+
 flowchart TD
     subgraph Users["User Layer"]
         Farmer["Nông dân\n- Cập nhật thông tin\n- Quản lý sản phẩm"]
