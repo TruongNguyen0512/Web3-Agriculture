@@ -1,52 +1,4 @@
-# LLM-Based Agriculture System Architecture
-
-![Architecture Diagram](./assets/llm-architecture.png)
-
-## System Components
-
-### Cloud Layer
-- **Feature Services**
-  - Translation Service with LLM Engine
-  - Chat Service with Context Management
-  - Language Detection & Cache Layer
-
-- **Core Services**
-  - Language Processing Pipeline
-  - NLP & Sentiment Analysis
-  - Intent Extraction
-
-- **Cache & Storage**
-  - Conversation History
-  - Translation Cache
-  - User Preferences & Personality Adaptation
-
-### Device Layer
-- **Leader Bot**
-  - Feature Manager
-    - Voice/Text Input Processing
-    - Response Handling
-    - Local Language Detection
-  - Communication Manager
-    - Cloud Service Client
-    - Response Queue Management
-
-- **Follower Bot**
-  - Mirrors Leader Bot functionality
-  - Synchronized communication
-
-### User Interface Layer
-- Mobile Application
-  - Voice Commands
-  - Text Chat
-  - Translation Preferences
-  - Personality Settings
-
-## Implementation Notes
-1. All inter-layer communication is handled through secure channels
-2. Load balancing is implemented at the cloud layer
-3. Local processing capabilities ensure offline functionality
-4. Real-time synchronization between Leader and Follower bots
-
+```mermaid
 flowchart TB
     subgraph "Cloud Layer"
         subgraph "Feature Services"
@@ -157,3 +109,4 @@ flowchart TB
     style UP fill:#c7e5a0,stroke:#333,stroke-width:1px
     
     style MA fill:#d8adf0,stroke:#333,stroke-width:2px
+```
